@@ -17,8 +17,8 @@ public class SignupTest {
 
     @Before
     public void startUp() {
-//        driver = new WebDriverFactory().getWebDriver("chrome");
-        driver = new WebDriverFactory().getWebDriver("yandex");
+        driver = new WebDriverFactory().getWebDriver("chrome");
+//        driver = new WebDriverFactory().getWebDriver("yandex");
         driver.get("https://stellarburgers.nomoreparties.site/register");
         mainPage = new MainPage(driver);
     }

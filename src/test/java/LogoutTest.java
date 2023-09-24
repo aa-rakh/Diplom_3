@@ -27,6 +27,7 @@ public class LogoutTest extends BaseTest{
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         PersonalAreaPage personalAreaPage = mainPage.clickPersonalAreaButtonSignUpUser();
         LoginPage loginPage = personalAreaPage.clickLogoutButton();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         assertTrue(loginPage.isLoginFormVisible());
     }
 

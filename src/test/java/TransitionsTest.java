@@ -26,6 +26,7 @@ public class TransitionsTest extends BaseTest{
                 .clickLoginButton();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         PersonalAreaPage personalAreaPage = mainPage.clickPersonalAreaButtonSignUpUser();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         assertTrue(personalAreaPage.isLogoutButtonVisible());
     }
 

@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class WebDriverFactory {
     public WebDriver driver;
 
-    public WebDriver getWebDriver(String browserName){
-        switch (browserName){
+    public WebDriver getWebDriver(String browserName) {
+        switch (browserName) {
             case "chrome":
                 return new ChromeDriver();
             case "yandex":
